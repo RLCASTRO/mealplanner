@@ -294,14 +294,11 @@ export const Meal = () => {
               variant="body1"
               sx={{
                 "#ingredientsTable tbody tr:nth-of-type(even)": {
-                  backgroundColor: "#E8F5E9" /* Slightly darker green for even rows */,
+                  backgroundColor: `${theme.palette.action.selected}` 
                 },
                 "#ingredientsTable": {
-                  border: "1px solid #E0E0E0",
+                  border: `1px solid ${theme.palette.info.dark}`,
                   padding: "0.3em",
-                },
-                "#ingredientsTable thead": {
-                  borderBottom: "1px solid black",
                 },
                 "#ingredientsTable td": {
                   verticalAlign: "top",
@@ -315,7 +312,7 @@ export const Meal = () => {
               <>
                 <table id="ingredientsTable" cellSpacing="0" cellPadding="0">
                   <thead>
-                    <tr style={{ backgroundColor: "#E8F5E9" }}>
+                    <tr style={{ backgroundColor: `${theme.palette.action.selected}` }}>
                       <th style={{ textAlign: "left" }}>Ingredients</th>
                       <th style={{ textAlign: "center" }}>Qtt</th>
                       <th style={{ textAlign: "center" }}>Unit</th>
